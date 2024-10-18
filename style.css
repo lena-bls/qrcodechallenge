@@ -1,0 +1,63 @@
+*,
+*::before
+*::after{
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+}
+/* the above code is to make sure i don't overwrite my style*/
+body{
+    background-color: hsl(212, 45%, 89%); 
+    /* font-size: 15px;
+    font-weight: 400, 700;  */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+.heading{
+    color: hsl(218, 44%, 22%);
+    font-size: 1.375rem;
+    font-weight: 400, 700;
+    grid-row: 1;
+    padding: 10px;
+}
+.text{
+    padding: 3px;
+    grid-row: 2;
+}
+.image{
+    height: 280px;
+    width: 280px;
+    border-radius: 12px;
+}
+p{
+    font-size: 15px;
+    color: hsl(216, 15%, 48%);
+}
+section{
+    display: grid;
+    grid-template-rows:50% 50%;
+}
+
+main{
+    border-radius: 15px;
+    width: 19rem;
+    height: 25rem;
+    background-color: white;
+    padding: 15px;
+    border: 0; 
+}
+@media(min-width:1440px){
+    body{
+        flex-direction: row;
+    }
+}
+@media(max-width: 375px){
+    body{
+        flex-direction: column;
+    }
+}

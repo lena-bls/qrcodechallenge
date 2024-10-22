@@ -24,12 +24,11 @@ body{
     font-size: 1.375rem;
     font-weight: 400, 700;
     grid-row: 1;
-    padding: 50px;
+    padding: 10px;
 }
 .text{
-    padding: 3px;
     grid-row: 2;
-    padding: 50px;
+    padding: 10px;
 }
 .image{
     height: 280px;
